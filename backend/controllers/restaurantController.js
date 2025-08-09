@@ -44,12 +44,13 @@ export const deleteRestaurant = async(req, res) => {
         res.status(500).json({ error: "Failed to delete restaurant" });
     }
 };
+
 export const updateRestaurant = async(req, res) => {
     const { id } = req.params;
     try {
         const updatedRestaurant = await Restaurant.findByIdAndUpdate(id, req.body, {
-            new: true, // return the updated document
-            runValidators: true, // validate before update
+            new: true,
+            runValidators: true,
         });
 
         if (!updatedRestaurant) {
@@ -60,11 +61,4 @@ export const updateRestaurant = async(req, res) => {
     } catch (err) {
         res.status(400).json({ error: "Failed to update restaurant" });
     }
-};
-export {
-    getAllRestaurants,
-    getRestaurantById,
-    createRestaurant,
-    updateRestaurant,
-    deleteRestaurant,
 };

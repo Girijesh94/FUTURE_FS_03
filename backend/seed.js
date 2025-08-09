@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import Restaurant from './models/Restaurant.js';
-import MenuItem from './models/MenuItem.js';
+import MenuItem from './models/menuItemModel.js';
 import connectDB from './config/db.js';
 
 dotenv.config();

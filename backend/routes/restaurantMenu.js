@@ -3,6 +3,7 @@ import { getMenuByRestaurantId } from "../controllers/restaurantMenuController.j
 
 const router = express.Router();
 
+// Fix: Add /menu in the route path
 router.get("/:restaurantId", getMenuByRestaurantId);
 
 export default router;
