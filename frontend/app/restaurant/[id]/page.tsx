@@ -1,7 +1,6 @@
-
 import RestaurantDetail from './RestaurantDetail';
 
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<{ id: string }[]> {
   return [
     { id: '1' },
     { id: '2' },
@@ -15,6 +14,13 @@ export async function generateStaticParams() {
   ];
 }
 
-export default function RestaurantPage({ params }: { params: { id: string } }) {
-  return <RestaurantDetail restaurantId={params.id} />;
+// The page component's props type is exactly what Next.js expects:
+export default async function RestaurantPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  // Await the promise here:
+  const resolvedParams = await params;
+  return <RestaurantDetail restaurantId={resolvedParams.id} />;
 }
