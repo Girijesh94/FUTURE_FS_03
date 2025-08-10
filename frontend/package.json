@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "@react-google-maps/api": "^2.19.3",
-    "framer-motion": "^12.23.12",
     "next": "15.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

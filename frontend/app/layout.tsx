@@ -5,7 +5,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { CartProvider } from '../lib/CartContext';
 
-
 const pacifico = Pacifico({
   weight: '400',
   subsets: ['latin'],
@@ -24,8 +23,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Swiggy AI Redesign",
-  description: "A futuristic Swiggy redesign with smooth UI/UX.",
+  title: "Swiggy Rebrand",
+  description: "",
 };
 
 export default function RootLayout({
