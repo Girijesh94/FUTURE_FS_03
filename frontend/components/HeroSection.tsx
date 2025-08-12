@@ -64,7 +64,7 @@ export default function HeroSection() {
         <div className="w-full">
           <div className="text-left max-w-3xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Hungry? We've got you covered with
+              Hungry? We&apos;ve got you covered with
               <span className="text-orange-400 block mt-2">AI-powered delivery</span>
             </h1>
             <p className="text-xl sm:text-2xl text-white/90 mb-8 leading-relaxed">

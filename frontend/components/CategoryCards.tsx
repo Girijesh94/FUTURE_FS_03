@@ -63,7 +63,7 @@ export default function CategoryCards() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            What's on your mind?
+            What&apos;s on your mind?
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Browse through our popular categories and discover your next favorite meal
